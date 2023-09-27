@@ -52,6 +52,10 @@
             font-weight: bold;
         }
 
+        a {
+            color: black;
+        }
+
         #top,
         #sidebar,
         #bottom,
@@ -73,7 +77,7 @@
             padding: 0px;
         }
 
-        #wrapper {
+        .wrapper {
             position: relative;
             overflow: auto;
         }
@@ -146,15 +150,15 @@
                     change the layout of this page by selecting different stylesheets in the menu, or by selecting one
                     of
                     the following links:<br>
-                    <a>Stylesheet1</a>,
-                    <a>Stylesheet2</a>,
-                    <a>Stylesheet3</a>,
-                    <a>Stylesheet4</a>.
+                    <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
+                    <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
+                    <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
                 </p>
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the
                     page
-                    looks like with no stylesheet:<br><a>No Stylesheet</a>.</p>
+                    looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
             </div>
             <div id="sidebar">
                 <h3>Side-Bar</h3>
