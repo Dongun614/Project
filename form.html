@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .field {
+            width: 400px;
+            height: auto;
+            display: flex;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .buttons{
+            display: flex;
+        }
+
+        .buttons input{
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="field">
+        <legend class="title">2023 축제 TFT 신청서</legend>
+        <div>
+            <div>
+                이름 : <input type="text" name="name">
+            </div>
+            <br>
+            <div>
+                학번 : <input type="text" name="id">
+            </div>
+            <br>
+            <div>
+                성별 : <input type="radio" name="gender" value="M"> 남 <input type="radio" name="gender" value="F"> 여
+            </div>
+            <br>
+            <div>
+                전공 :
+                <select>
+                    <option value="1">글로벌리더십학부</option>
+                    <option value="2">국제어문학부</option>
+                    <option value="3">경영경제학부</option>
+                    <option value="4">법학부</option>
+                    <option value="5">커뮤니케이션학부</option>
+                    <option value="6">공간환경시스템공학부</option>
+                    <option value="7">기계제어공학부</option>
+                    <option value="8">콘텐츠융합디자인학부</option>
+                    <option value="9">생명과학부</option>
+                    <option value="10">전산전자공학부</option>
+                    <option value="11">상담심리사회복지학부</option>
+                    <option value="12">ICT창업학부</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                지원 동기
+                <br>
+                <textarea rows="20" cols="70"></textarea>
+            </div>
+            <br>
+            <div>
+                면접 희망 날짜:
+                <br>
+                <input type="date" name="interview">
+            </div>
+            <br>
+            면접일자에 나오시지 못하시면 선발 자동 탈락처리가 됩니다.<br> 이에 대해 동의하십니까? <input type="checkbox" name="agree">
+    </fieldset>
+
+</body>
+<div class="buttons">
+    <input type="reset" value="취소">  
+    <input type="submit" value="제출">
+</div>
+
+</html>
